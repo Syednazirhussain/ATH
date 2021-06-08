@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ATH 2 | Log in</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    @Styles.Render("~/Content/adminlte/bower_components/bootstrap/dist/css/bootstrap.css")
+    @Styles.Render("~/Content/adminlte/bower_components/font-awesome/css/font-awesome.css")
+    @Styles.Render("~/Content/adminlte/bower_components/Ionicons/css/ionicons.css")
+    @Styles.Render("~/Content/adminlte/dist/css/AdminLTE.min.css")
+    @Styles.Render("~/Content/adminlte/plugins/iCheck/square/blue.css")
+
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="javascript:void(0);"><b>Admin</b>&nbsp;ATH</a>
+        </div>
+        <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <form action="javascript:void(0);" method="post">
+                <div class="form-group has-feedback">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @Scripts.Render("~/Content/adminlte/bower_components/jquery/dist/jquery.js")
+    @Scripts.Render("~/Content/adminlte/bower_components/bootstrap/dist/js/bootstrap.js")
+    @Scripts.Render("~/Content/adminlte/plugins/iCheck/icheck.min.js")
+
+</body>
+</html>
