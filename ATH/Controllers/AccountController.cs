@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ATH.ViewModel;
 using ATH.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace ATH.Controllers
 {
@@ -157,7 +158,14 @@ namespace ATH.Controllers
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
+                    var roleStore = new RoleStore<IdentityRole>(new ApplicationDbContext());
+                    var roleManager = new RoleManager<IdentityRole>(roleStore);
+
+                    await roleManager.CreateAsync(new IdentityRole("Admin"));
+                    await UserManager.AddToRoleAsync(user.Id, "Admin");
+
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);

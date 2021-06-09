@@ -1,0 +1,77 @@
+﻿@using Microsoft.AspNet.Identity
+
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+        <a href="javascript:void(0);" class="logo mr-auto">
+            <img src="@Href("~/Content/medicio/assets/img/logo.png")" alt="logo">
+        </a>
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="active">
+                    <a href="javascript:void(0);">Home</a>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+
+
+                @if (Request.IsAuthenticated)
+                {
+                    <li class="drop-down">
+                        <a href="javascript:void(0);">Options</a>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#doctors">Doctors</a></li>
+                            <li><a href="#departments">Departments</a></li>
+                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                            {
+                            @Html.AntiForgeryToken()
+                            <li><a href="javascript:document.getElementById('logoutForm').submit()">Logout</a></li>
+                            }
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li class="drop-down">
+                        <a href="javascript:void(0);">Options</a>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#doctors">Doctors</a></li>
+                            <li><a href="#departments">Departments</a></li>
+                            <li><a href="javascript:void(0);">Register</a></li>
+                            <li><a href="javascript:void(0);">Login</a></li>
+                        </ul>
+                    </li>
+                }
+
+
+
+                <!--
+        <li class="drop-down">
+            <a href="javascript:void(0);">Drop Down</a>
+            <ul>
+                <li><a href="javascript:void(0);">Drop Down 1</a></li>
+                <li class="drop-down">
+                    <a href="javascript:void(0);">Deep Drop Down</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Deep Drop Down 1</a></li>
+                        <li><a href="javascript:void(0);">Deep Drop Down 2</a></li>
+                        <li><a href="javascript:void(0);">Deep Drop Down 3</a></li>
+                        <li><a href="javascript:void(0);">Deep Drop Down 4</a></li>
+                        <li><a href="javascript:void(0);">Deep Drop Down 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">Drop Down 2</a></li>
+                <li><a href="javascript:void(0);">Drop Down 3</a></li>
+                <li><a href="javascript:void(0);">Drop Down 4</a></li>
+            </ul>
+        </li>
+    -->
+
+
+            </ul>
+        </nav>
+        <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+    </div>
+</header>

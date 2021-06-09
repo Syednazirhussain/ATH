@@ -21,7 +21,7 @@ namespace ATH.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("ATH-LOCAL", throwIfV1Schema: false)
         {
         }
 
