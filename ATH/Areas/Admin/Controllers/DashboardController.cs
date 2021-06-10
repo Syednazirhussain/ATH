@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace ATH.Areas.Admin.Controllers
 {
+
+    [AdminAuthorize(Roles = "Admin")]
     public class DashboardController : Controller
     {
         // GET: Admin/Dashboard
