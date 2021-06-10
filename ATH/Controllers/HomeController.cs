@@ -15,8 +15,6 @@ namespace ATH.Controllers
 
         public ActionResult About()
         {
-            throw new Exception();
-
             ViewBag.Message = "Your application description page.";
 
             return View();

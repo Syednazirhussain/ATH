@@ -8,10 +8,14 @@
         <nav class="nav-menu d-none d-lg-block">
             <ul>
                 <li class="active">
-                    <a href="javascript:void(0);">Home</a>
+                    @Html.ActionLink("Home", "Index", "Home")
                 </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    @Html.ActionLink("About", "About", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "Contact", "Home")
+                </li>
                 @if (Request.IsAuthenticated)
                 {
                     <li class="drop-down">
@@ -36,8 +40,12 @@
                             <li><a href="#services">Services</a></li>
                             <li><a href="#doctors">Doctors</a></li>
                             <li><a href="#departments">Departments</a></li>
-                            <li><a href="javascript:void(0);">Register</a></li>
-                            <li><a href="javascript:void(0);">Login</a></li>
+                            <li>
+                                @Html.ActionLink("Register", "Register", "Account")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Login", "Login", "Account")
+                            </li>
                         </ul>
                     </li>
                 }
