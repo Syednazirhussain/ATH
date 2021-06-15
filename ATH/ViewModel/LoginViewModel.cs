@@ -8,14 +8,15 @@ namespace ATH.ViewModel
 {
     public class LoginViewModel
     {
-        [Required]
-        [Display(Name = "Email")]
+
         [EmailAddress]
+        [Display(Name = "Email")]
+        [Required(ErrorMessage = "Email is required")]
         public string Email { get; set; }
 
-        [Required]
-        [DataType(DataType.Password)]
         [Display(Name = "Password")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
 
         [Display(Name = "Remember me?")]

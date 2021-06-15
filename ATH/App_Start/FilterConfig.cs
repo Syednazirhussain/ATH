@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Mvc.Filters;
 using System.Web.Routing;
 
 namespace ATH
@@ -9,43 +10,48 @@ namespace ATH
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            //filters.Add(new AdminAuthorize());
-
             filters.Add(new HandleErrorAttribute());
             filters.Add(new AuthorizeAttribute());
+
+            filters.Add(new CustomAuthenticationFilter());
         }
     }
 
-    public class AdminAuthorize : AuthorizeAttribute
+    public class CustomAuthenticationFilter : ActionFilterAttribute, IAuthenticationFilter
     {
-        public override void OnAuthorization(AuthorizationContext filterContext)
+        public void OnAuthentication(AuthenticationContext filterContext)
         {
-            // If you are authorized
-            if (this.AuthorizeCore(filterContext.HttpContext))
+
+            if (!filterContext.ActionDescriptor.IsDefined(typeof(AllowAnonymousAttribute), true) &&
+                !filterContext.ActionDescriptor.ControllerDescriptor.IsDefined(typeof(AllowAnonymousAttribute), true))
             {
-                base.OnAuthorization(filterContext);
-            }
-            else
-            {
-                // else redirect to your Area  specific login page
-                filterContext.Result = new RedirectResult("~/Admin/Login/Index");
+
+                if (!filterContext.HttpContext.User.Identity.IsAuthenticated)
+                {
+                    filterContext.Result = new HttpUnauthorizedResult();
+                }
             }
         }
 
+        public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
+        {
 
-        //protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
-        //{
-        //    if (filterContext.HttpContext.User.Identity.IsAuthenticated)
-        //    {
-        //        filterContext.Result = new HttpStatusCodeResult(HttpStatusCode.Forbidden);
-        //    }
-        //    else
-        //    {
-        //        base.HandleUnauthorizedRequest(filterContext);
-        //    }
-        //}
+            bool firstCond = filterContext.Result == null;
+            bool secondCond = filterContext.Result is HttpUnauthorizedResult;
 
+            if (firstCond || secondCond)
+            {
 
+                if (filterContext.HttpContext.Request.Path.Contains("Admin"))
+                {
+                    filterContext.Result = new RedirectResult("~/Admin/Login/Index");
+                }
+                else
+                {
+                    filterContext.Result = new RedirectResult("~/");
+                }
+            }
+        }
     }
 
 
