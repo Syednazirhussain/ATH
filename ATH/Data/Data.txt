@@ -1,0 +1,76 @@
+﻿
+Dashboard -> Index -> OnActionExecuting 	-16-Jun-21 10:08:42 PM
+Dashboard -> Index -> OnActionExecuted 	-16-Jun-21 10:08:42 PM
+Dashboard -> Index -> OnResultExecuting 	-16-Jun-21 10:08:42 PM
+Dashboard -> Index -> OnResultExecuted 	-16-Jun-21 10:08:50 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 7:10:09 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 7:10:09 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 7:10:09 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 7:10:14 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 7:51:44 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 7:51:46 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 7:51:49 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 7:51:54 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:00:01 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:00:01 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:00:02 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:00:04 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:00:38 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:00:38 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:00:39 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:00:39 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:01:31 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:01:31 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:01:31 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:01:31 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:06:03 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:06:03 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:06:03 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:06:05 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:06:49 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:06:55 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:07:00 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:07:04 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:08:33 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:08:33 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:08:33 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:08:34 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:08:43 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:08:43 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:08:43 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:08:43 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:08:53 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:08:53 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:08:53 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:08:53 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:08:59 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:08:59 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:08:59 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:08:59 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:09:04 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:09:04 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:09:04 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:09:04 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:11:01 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:11:01 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:11:01 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:11:01 PM
+---------------------------------------------------
+Dashboard -> Index -> OnActionExecuting 	-19-Jun-21 8:13:32 PM
+Dashboard -> Index -> OnActionExecuted 	-19-Jun-21 8:13:32 PM
+Dashboard -> Index -> OnResultExecuting 	-19-Jun-21 8:13:32 PM
+Dashboard -> Index -> OnResultExecuted 	-19-Jun-21 8:13:32 PM
+---------------------------------------------------

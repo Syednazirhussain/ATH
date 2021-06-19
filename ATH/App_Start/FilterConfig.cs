@@ -31,6 +31,22 @@ namespace ATH
                     filterContext.Result = new HttpUnauthorizedResult();
                 }
             }
+            else
+            {
+                if (filterContext.HttpContext.User.Identity.IsAuthenticated)
+                {
+
+                    if (filterContext.HttpContext.User.IsInRole("Admin"))
+                    {
+                        filterContext.Result = new RedirectResult("~/Admin/Dashboard");
+                    }
+                    else
+                    {
+                        filterContext.Result = new RedirectResult("~/");
+                    }
+
+                }
+            }
         }
 
         public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
@@ -44,7 +60,14 @@ namespace ATH
 
                 if (filterContext.HttpContext.Request.Path.Contains("Admin"))
                 {
-                    filterContext.Result = new RedirectResult("~/Admin/Login/Index");
+                    if (filterContext.HttpContext.User.Identity.IsAuthenticated)
+                    {
+                        filterContext.Result = new RedirectResult("~/Admin/Dashboard");
+                    }
+                    else
+                    {
+                        filterContext.Result = new RedirectResult("~/Admin/Login/Index");
+                    }
                 }
                 else
                 {
