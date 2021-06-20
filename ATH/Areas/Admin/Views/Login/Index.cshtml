@@ -26,7 +26,7 @@
             {
                 @Html.AntiForgeryToken()
 
-                if(TempData["Message"] != null)
+                if (TempData["Message"] != null)
                 {
                     <div class="alert alert-danger">
                         <span>@TempData["Message"]</span>
@@ -46,17 +46,21 @@
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                 </div>
+
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="checkbox icheck">
-                            @Html.CheckBoxFor(m => m.RememberMe)
-                            @Html.LabelFor(m => m.RememberMe)
+                            <label>
+                                <input type="checkbox"> Remember Me
+                            </label>
                         </div>
                     </div>
                     <div class="col-xs-4">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                     </div>
                 </div>
+
+
             }
         </div>
     </div>
